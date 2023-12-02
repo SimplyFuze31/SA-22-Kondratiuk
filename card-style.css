@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap");
+
+:root {
+  --main-color: #e7706c;
+  --main-color-hover: #e04540;
+  --secondary-color: #6ce3e7;
+  --background-color: #fcf5ed;
+  --border-color: rgba(115, 115, 115, 0.1);
+  --white: #ffffff;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 242px;
+    padding: 10px 30px;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+}
+
+.card-img{
+    max-width: 200px;
+    display: flex;
+    justify-content: center;
+}
+
+.card-img img{
+    width:100%;
+    object-fit: contain;
+}
+.card-description{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-description h4{
+    margin: 5px 0 20px 0;
+}
+.card-description p{
+    margin: 15px 0 5px 0;
+}
+.card-actions{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.card-actions button{
+    height: 40px;
+    width: auto;
+    max-width: 115px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--main-color);
+    color: white;
+    padding: 0 20px;
+}

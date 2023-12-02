@@ -105,10 +105,11 @@ header {
 .banner {
   max-width: 1380px;
   height: 57vh;
+  min-height: 400px;
   max-height: 500px;
   position: relative;
   text-align: center;
-  padding: 20px 0;
+  padding-bottom: 20px;
 }
 .hero img {
   width: 100%;
@@ -173,10 +174,13 @@ header {
   gap: 2vw;
 }
 
+.News{
+  padding: 0 10px;
+}
 .news-cards{
   display: flex;
   justify-content: space-between;
-  gap: 2vw;
+  gap: 1vw;
 }
 
 .news-card {
@@ -194,6 +198,7 @@ header {
 .news-card-banner img{
   width: 100%;
   height: 100%;
+  object-fit: fill;
 }
 .news-card-description{
   padding: 5%;
@@ -203,10 +208,12 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 0 10px;
 }
 
 .about-us-ilustrations {
   display: flex;
+  justify-content: center;
   margin-top: 20px;
 }
 
@@ -215,8 +222,7 @@ header {
   color: var(--white);
 }
 .ilustration {
-  width: 284px;
-  height: 100px;
+  width: 20%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -225,12 +231,13 @@ header {
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
   font-size: 1.25rem;
-  padding: 30px 0;
+  padding: 30px 10px;
 }
 .ilustration p {
   margin: 0;
 }
 .email {
+  padding: 0 10px;
   margin: 50px 0;
 }
 .email-block {

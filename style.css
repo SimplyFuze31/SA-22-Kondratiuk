@@ -2,8 +2,9 @@
 
 :root {
   --main-color: #e7706c;
-  --main-color-hover: #e04540;
+  --main-color-hover: rgba(0, 0, 0, 0.3);
   --secondary-color: #6ce3e7;
+  --secondary-color-hover: #5ac5c9;
   --background-color: #fcf5ed;
   --border-color: rgba(115, 115, 115, 0.1);
   --white: #ffffff;
@@ -22,7 +23,13 @@ body {
 button {
   cursor: pointer;
 }
-
+main{
+  display: flex;
+  justify-content: center;
+}
+.secondary-button:hover{
+    background: var(--secondary-color-hover);
+}
 .wrapper {
   flex: 1;
   width: 100vw;
@@ -47,7 +54,7 @@ header {
   margin-left: 3vh;
 }
 
-.logo a{
+.logo a {
   width: 200px;
 }
 .logo img {
@@ -83,7 +90,7 @@ header {
   background-color: var(--secondary-color);
 }
 
-.searchbar img{
+.searchbar img {
   width: 100%;
   height: 100%;
 }
@@ -98,6 +105,24 @@ header {
   color: var(--white);
 }
 
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: var(--main-color);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 12px 16px;
+  z-index: 6;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown:hover .dropdown-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
 .for-user {
   display: flex;
   gap: 10px;
@@ -106,11 +131,21 @@ header {
   display: flex;
   align-items: center;
   list-style: none;
+  white-space: nowrap;
   gap: 20px;
 }
 
 #menu-toggle {
   display: none;
+}
+.menu-items {
+  width: 100%;
+  padding: 5px;
+}
+.menu-items:hover {
+  background-color: var(--secondary-color);
+  color: #000;
+  border-radius: 5px;
 }
 
 .for-menu {
@@ -209,12 +244,17 @@ header {
   border: 1px solid var(--border-color);
   margin: 0;
 }
-.news-title{
+.news-title {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
+.news-card iframe {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
 
 .news-card-banner {
   width: 100%;
@@ -253,7 +293,7 @@ header {
   font-size: 1.25rem;
   padding: 30px 10px;
 }
-.ilustration:nth-child(2n+1){
+.ilustration:nth-child(2n + 1) {
   background-color: var(--main-color);
   color: var(--background-color);
 }
@@ -353,22 +393,40 @@ footer li {
   width: 40;
 }
 
+.contact-us{
+  margin-top: 2%;
+  padding: 20px 25%;
+  width: 50%;
+  background-color: var(--main-color);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact-us-inputs{
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
 @media all and (max-width: 1260px) {
-    .news-card:nth-child(n+4){
+  .news-card:nth-child(n + 4) {
     display: none;
   }
 }
 
 @media all and (max-width: 1024px) {
-  footer{
+  footer {
     flex-direction: column;
     align-items: center;
     text-align: center;
   }
-  .email-block{
+  .email-block {
     flex-direction: column;
   }
-  .email-input{
+  .email-input {
     padding-bottom: 30px;
   }
   .slider-control {
@@ -388,7 +446,7 @@ footer li {
     align-items: center;
     position: absolute;
     top: 26px;
-    right: 20px;
+    right: 30px;
     width: 26px;
     height: 26px;
     cursor: pointer;
@@ -478,13 +536,12 @@ footer li {
 }
 
 @media all and (max-width: 768px) {
-  
-  .about-us-ilustrations{
+  .about-us-ilustrations {
     flex-direction: column;
     align-items: center;
     width: 85%;
   }
-  .ilustration{
+  .ilustration {
     width: 100%;
   }
   .cards {
@@ -493,43 +550,42 @@ footer li {
   .email-input {
     max-width: 200px;
   }
-  .email-input button{
+  .email-input button {
     font-size: 0.75rem;
   }
-  .email-block{
+  .email-block {
     align-items: center;
   }
-  .news-card:nth-child(n+2){
+  .news-card:nth-child(n + 2) {
     display: block;
   }
-    .news-cards{
+  .news-cards {
     flex-wrap: wrap;
   }
   .searchbar {
     max-width: 300px;
     margin-right: 10%;
   }
-  .logo{
-      min-width: 150px;
+  .logo {
+    min-width: 150px;
   }
-  .searchbar{
+  .searchbar {
     height: 35px;
   }
-  .email-description img{
+  .email-description img {
     width: 80px;
     height: fit-content;
   }
 }
 
-@media all and (max-width: 485px) 
-{
-  .searchbar{
+@media all and (max-width: 485px) {
+  .searchbar {
     margin-left: 15px;
   }
-  .logo{
+  .logo {
     display: none;
   }
-  .news-card{
+  .news-card {
     width: 100%;
   }
   .news-card-banner img {

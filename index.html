@@ -2,22 +2,22 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="card-style.css" />
     <title>Document</title>
   </head>
   <body>
     <header>
-        <div class="logo">
-          <a href=""></a>
+      <div class="logo">
+        <a href="/index.html">
           <img src="/resources/Logo.svg" alt="Logo" />
-          </a>
-        </div>
-      
+        </a>
+      </div>
+
       <div class="searchbar">
         <input type="text" placeholder="Знайти книгу" />
-        <button type="submit">
+        <button class="secondary-button" type="submit">
           <img src="resources/Search icon.png" alt="Search icon" />
         </button>
       </div>
@@ -27,9 +27,21 @@
           <span></span>
         </label>
         <ul class="menu-box">
-          <li><a href="#" class="menu-items">Каталог</a></li>
-          <li><a href="#" class="menu-items">Новинки</a></li>
-          <li><a href="#" class="menu-items">Топ продажів</a></li>
+          <li>
+            <div class="dropdown">
+              <a href="#" class="menu-items">Каталог</a>
+              <div class="dropdown-content">
+                <a href="#" class="menu-items">Новинки</a>
+                <a href="#" class="menu-items">Топ продажів</a>
+                <a href="#" class="menu-items">Навчальна література</a>
+                <a href="#" class="menu-items">Художння література</a>
+                <a href="#" class="menu-items">Дітям</a>
+              </div>
+            </div>
+          </li>
+          <li><a href="" class="menu-items">Знижки %</a></li>
+          <li><a href="" class="menu-items">Новини</a></li>
+          <!-- <li><a href="/contact-us.html" class="menu-items">Контакти</a></li> -->
           <li><a href="#" class="menu-items for-menu">Кошик</a></li>
           <li><a href="#" class="menu-items for-menu">Профіль</a></li>
         </ul>
@@ -70,15 +82,12 @@
               </div>
             </button>
           </div>
-        
+
           <section class="cards">
             <div class="card">
               <div class="card-img">
                 <a href="#">
-                  <img
-                    src="/resources/Hot and and.webp"
-                    alt="Book cover"
-                  />
+                  <img src="/resources/Hot and and.webp" alt="Book cover" />
                 </a>
               </div>
               <div class="card-description">
@@ -111,10 +120,7 @@
             <div class="card">
               <div class="card-img">
                 <a href="#">
-                  <img
-                    src="/resources/die again.webp"
-                    alt="Book cover"
-                  />
+                  <img src="/resources/die again.webp" alt="Book cover" />
                 </a>
               </div>
               <div class="card-description">
@@ -129,10 +135,7 @@
             <div class="card">
               <div class="card-img">
                 <a href="#">
-                  <img
-                    src="/resources/damned island.webp"
-                    alt="Book cover"
-                  />
+                  <img src="/resources/damned island.webp" alt="Book cover" />
                 </a>
               </div>
               <div class="card-description">
@@ -207,10 +210,7 @@
             <div class="card">
               <div class="card-img">
                 <a href="#">
-                  <img
-                    src="/resources/mute witness.webp"
-                    alt="Book cover"
-                  />
+                  <img src="/resources/mute witness.webp" alt="Book cover" />
                 </a>
               </div>
               <div class="card-description">
@@ -272,7 +272,15 @@
 
           <figure class="news-card">
             <div class="news-card-banner">
-              <img src="/resources/news_3012kn1.webp" alt="Banner" />
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/SKVcQnyEIT8?si=v-jUWPwbP_7d7Wle"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
             </div>
             <div class="news-card-description">
               <p class="news-card-date">10 листопада 2023</p>
@@ -311,21 +319,21 @@
         <div class="about-us-title">
           <h2>BookShop найбільша інтернет книгарня в Україні</h2>
           <p>
-            Книжковий магазин "Книголенд" - це завжди гнучка цінова політика.
-            Наприклад, "Книголенд" створює особливі умови для постійних покупців
+            Книжковий магазин "BookShop" - це завжди гнучка цінова політика.
+            Наприклад, "BookShop" створює особливі умови для постійних покупців
             і для того, щоб Ви, наш читач, захотіли придбати книги саме в нашому
             книжковому магазині. Спеціально для покупців книгарні розроблена
             програма лояльності, беручи участь в якій можна купувати з постійно
             збільшується знижкою. Вже сьогодні Ви можете зробити покупку в
             нашому книжковому магазині і не платити за її доставку, завантажити
             флаєр і купити книгу зі знижкою і це тільки початок... Асортимент
-            книжкових магазинів "Книголенд" формується досвідченими
+            книжкових магазинів "BookShop" формується досвідченими
             товарознавцями, які замовляють популярні і рідкісні книги, вміло
             підбирають книги в рубрики новинки і розпродаж.
           </p>
         </div>
         <div class="about-us-ilustrations">
-          <div class="ilustration ">
+          <div class="ilustration">
             <img src="/resources/Genre icon.png" alt="Genre icon" />
             <p>Більше 200 жанрів</p>
           </div>
@@ -333,7 +341,7 @@
             <img src="/resources/Books icon.png" alt="Books icon" />
             <p>Понад 20 000 тисяч книг</p>
           </div>
-          <div class="ilustration ">
+          <div class="ilustration">
             <img src="/resources/Delivery icon.png" alt="Delivery icon" />
             <p>Доставка по всій Україні</p>
           </div>
@@ -361,7 +369,7 @@
           </div>
           <div class="email-input">
             <input type="text" placeholder="Введіть свій e-mail" />
-            <button type="submit">Підписатись</button>
+            <button class="secondary-button" type="submit">Підписатись</button>
           </div>
         </div>
       </section>

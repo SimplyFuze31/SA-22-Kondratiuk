@@ -59,6 +59,10 @@
     color: white;
     padding: 0 20px;
 }
+.card-actions button:hover{
+    background-color: #6ce3e7;
+    color: #000;
+}
 
 @media screen and (max-width: 1024px) {
     .card:nth-child(n+4){

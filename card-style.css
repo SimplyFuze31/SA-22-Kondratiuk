@@ -59,3 +59,23 @@
     color: white;
     padding: 0 20px;
 }
+
+@media screen and (max-width: 1024px) {
+    .card:nth-child(n+4){
+        display: none;
+    }
+}
+@media all and (max-width: 768px) {
+        .card:nth-child(n+3){
+        display: none;
+    }
+}
+@media all and (max-width: 485px) {
+    .card-actions{
+        flex-direction: column;
+    }
+    .card-actions h4{
+        margin: 0;
+        margin-bottom: 20px;
+    }
+}

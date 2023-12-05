@@ -2,33 +2,44 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="card-style.css" />
     <title>Document</title>
   </head>
   <body>
     <header>
-      <a href="">
         <div class="logo">
+          <a href=""></a>
           <img src="/resources/Logo.svg" alt="Logo" />
+          </a>
         </div>
-      </a>
-
+      
       <div class="searchbar">
         <input type="text" placeholder="Знайти книгу" />
         <button type="submit">
           <img src="resources/Search icon.png" alt="Search icon" />
         </button>
       </div>
-
       <nav class="header-nav">
-        <a href="#">Каталог</a>
-        <a href="#">Новинки</a>
-        <a href="#">Топ продажів</a>
+        <input id="menu-toggle" type="checkbox" />
+        <label class="menu-btn" for="menu-toggle">
+          <span></span>
+        </label>
+        <ul class="menu-box">
+          <li><a href="#" class="menu-items">Каталог</a></li>
+          <li><a href="#" class="menu-items">Новинки</a></li>
+          <li><a href="#" class="menu-items">Топ продажів</a></li>
+          <li><a href="#" class="menu-items for-menu">Кошик</a></li>
+          <li><a href="#" class="menu-items for-menu">Профіль</a></li>
+        </ul>
         <div class="for-user">
-          <a href="#"><img src="/resources/Cart icon.png" alt="Cart icon" /></a>
-          <a href="#"><img src="/resources/User icon.png" alt="User icon" /></a>
+          <a href="#" id="cart-btn" class="menu-items"
+            ><img src="/resources/Cart icon.png" alt="Cart icon"
+          /></a>
+          <a href="#" class="menu-items"
+            ><img src="/resources/User icon.png" alt="User icon"
+          /></a>
         </div>
       </nav>
     </header>
@@ -59,13 +70,13 @@
               </div>
             </button>
           </div>
-          <!--Cards Bestseller-->
+        
           <section class="cards">
             <div class="card">
               <div class="card-img">
                 <a href="#">
                   <img
-                    src="/resources/Убивство за етикетом.jpg"
+                    src="/resources/Hot and and.webp"
                     alt="Book cover"
                   />
                 </a>
@@ -83,7 +94,7 @@
               <div class="card-img">
                 <a href="#">
                   <img
-                    src="/resources/Убивство за етикетом.jpg"
+                    src="/resources/Переслідуваний схудлий.webp"
                     alt="Book cover"
                   />
                 </a>
@@ -101,7 +112,7 @@
               <div class="card-img">
                 <a href="#">
                   <img
-                    src="/resources/Убивство за етикетом.jpg"
+                    src="/resources/die again.webp"
                     alt="Book cover"
                   />
                 </a>
@@ -119,7 +130,7 @@
               <div class="card-img">
                 <a href="#">
                   <img
-                    src="/resources/Убивство за етикетом.jpg"
+                    src="/resources/damned island.webp"
                     alt="Book cover"
                   />
                 </a>
@@ -147,7 +158,7 @@
         <div class="slider-text">
           <h2><span>Новинки</span></h2>
         </div>
-       <div class="slider">
+        <div class="slider">
           <div class="slider-control">
             <button id="arrow">
               <div>
@@ -155,7 +166,7 @@
               </div>
             </button>
           </div>
-          <!--Cards Bestseller-->
+
           <section class="cards">
             <div class="card">
               <div class="card-img">
@@ -179,7 +190,7 @@
               <div class="card-img">
                 <a href="#">
                   <img
-                    src="/resources/Убивство за етикетом.jpg"
+                    src="/resources/Випробування невинуватістю.webp"
                     alt="Book cover"
                   />
                 </a>
@@ -197,7 +208,7 @@
               <div class="card-img">
                 <a href="#">
                   <img
-                    src="/resources/Убивство за етикетом.jpg"
+                    src="/resources/mute witness.webp"
                     alt="Book cover"
                   />
                 </a>
@@ -215,7 +226,7 @@
               <div class="card-img">
                 <a href="#">
                   <img
-                    src="/resources/Убивство за етикетом.jpg"
+                    src="/resources/Зникнення аптекарки.webp"
                     alt="Book cover"
                   />
                 </a>
@@ -243,6 +254,7 @@
       <section class="News">
         <div class="news-title">
           <h2>Новини</h2>
+          <a href="#">Більше →</a>
         </div>
         <div class="news-cards">
           <figure class="news-card">
@@ -313,7 +325,7 @@
           </p>
         </div>
         <div class="about-us-ilustrations">
-          <div class="ilustration background-main-color">
+          <div class="ilustration ">
             <img src="/resources/Genre icon.png" alt="Genre icon" />
             <p>Більше 200 жанрів</p>
           </div>
@@ -321,7 +333,7 @@
             <img src="/resources/Books icon.png" alt="Books icon" />
             <p>Понад 20 000 тисяч книг</p>
           </div>
-          <div class="ilustration background-main-color">
+          <div class="ilustration ">
             <img src="/resources/Delivery icon.png" alt="Delivery icon" />
             <p>Доставка по всій Україні</p>
           </div>

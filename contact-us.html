@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="contact-us-style.css">
     <link rel="stylesheet" href="style.css" />
     <title>Document</title>
   </head>
@@ -54,19 +55,35 @@
         </div>
       </nav>
     </header>
-    <main>
+    <main class="wrapper">
       <section class="contact-us">
-        <form action="" method="post">
-          <div class="contact-us-inputs">
-            <input type="text" placeholder="Username" />
-            <input type="text" placeholder="Username" />
-            <input type="text" placeholder="Username" />
-            <textarea name="" id="" cols="40" rows="5"></textarea>
+        <h3>Зв'яжіться з нами</h3>
+        <div class="form">
+          <div class="input_field">
+            <input type="text" id="name-field" placeholder="Ім'я">
           </div>
-          <div class="contact-us-textarea">
+          <div class="input_field">
+            <input type="text" placeholder="Email">
           </div>
-        </form>
+          <div class="input_field">
+            <textarea placeholder="Повідомлення"></textarea>
+          </div>
+          <div class="contact-us-actions" >
+            <button class="btn secondary-button" id="send-btn">Надіслати</button>
+          </div>
+        </div>
       </section>
+        
     </main>
   </body>
+  <script>
+
+    let sendbtn = document.getElementById("send-btn")
+    let namefield = document.getElementById("name-field")
+    sendbtn.addEventListener("click",function() {
+
+      alert(namefield.value + ", дякуємо за ваше повідомлення!")
+    })
+
+  </script>
 </html>
